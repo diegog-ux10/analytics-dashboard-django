@@ -28,7 +28,6 @@
     ></script>
     <!--Chats JS-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
   </head>
   <body>
     <div class="container">
@@ -41,7 +40,7 @@
       const ctx = document.getElementById('myChart');
 
       new Chart(ctx, {
-        type: 'bar',
+        type: 'line',
         data: {
           labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
           datasets: [
@@ -49,6 +48,7 @@
               label: '# of Votes',
               data: [12, 19, 3, 5, 2, 3],
               borderWidth: 1,
+              fill: 1,
               backgroundColor: [
                 'Red',
                 'Blue',
@@ -61,7 +61,7 @@
             },
             {
               label: '# of Votes',
-              data: [12, 19, 3, 5, 2, 3],
+              data: [6, 10, 1, 2, 1, 2],
               borderWidth: 1,
               backgroundColor: [
                 'Red',
